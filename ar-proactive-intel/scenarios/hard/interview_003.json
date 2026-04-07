@@ -1,0 +1,22 @@
+{
+  "scenario_id": "interview_003",
+  "difficulty": "hard",
+  "task_name": "hard_social",
+  "scene": {
+    "location": "meeting_room",
+    "activity_signals": ["negotiating salary", "leaning forward", "deliberate pause"],
+    "audio_cues": ["tense silence", "pen tapping"],
+    "social_risk": 0.95,
+    "time_pressure": 0.4,
+    "n_people_nearby": 2,
+    "eye_contact_detected": true,
+    "user_hands_occupied": false
+  },
+  "ground_truth_intent": "in_salary_negotiation",
+  "correct_action": "silent",
+  "correct_assist_type": "none",
+  "optimal_step": 1,
+  "social_risk": 0.95,
+  "description": "User is in a high-stakes salary negotiation — any distraction destroys leverage and trust",
+  "intents": ["in_salary_negotiation", "needs_negotiation_hint", "idle"]
+}

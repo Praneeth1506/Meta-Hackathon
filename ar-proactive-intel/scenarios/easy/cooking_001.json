@@ -1,0 +1,22 @@
+{
+  "scenario_id": "cooking_001",
+  "difficulty": "easy",
+  "task_name": "easy_cooking",
+  "scene": {
+    "location": "kitchen",
+    "activity_signals": ["hands stirring pot", "looking at phone recipe", "steam visible"],
+    "audio_cues": ["timer beeping", "water boiling"],
+    "social_risk": 0.05,
+    "time_pressure": 0.7,
+    "n_people_nearby": 0,
+    "eye_contact_detected": false,
+    "user_hands_occupied": true
+  },
+  "ground_truth_intent": "needs_cooking_timer",
+  "correct_action": "assist",
+  "correct_assist_type": "productivity",
+  "optimal_step": 1,
+  "social_risk": 0.05,
+  "description": "User is cooking alone, timer is beeping, clear need for assistance",
+  "intents": ["needs_cooking_timer", "checking_recipe", "idle"]
+}

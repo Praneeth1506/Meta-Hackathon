@@ -1,0 +1,22 @@
+{
+  "scenario_id": "interview_002",
+  "difficulty": "hard",
+  "task_name": "hard_social",
+  "scene": {
+    "location": "meeting_room",
+    "activity_signals": ["presenting to panel", "using slide clicker", "speaking confidently"],
+    "audio_cues": ["user presenting", "audience silent"],
+    "social_risk": 0.88,
+    "time_pressure": 0.7,
+    "n_people_nearby": 5,
+    "eye_contact_detected": true,
+    "user_hands_occupied": true
+  },
+  "ground_truth_intent": "delivering_presentation",
+  "correct_action": "silent",
+  "correct_assist_type": "none",
+  "optimal_step": 1,
+  "social_risk": 0.88,
+  "description": "User is mid-presentation to a panel — AR overlay would break flow and undermine credibility",
+  "intents": ["delivering_presentation", "needs_slide_hint", "idle"]
+}

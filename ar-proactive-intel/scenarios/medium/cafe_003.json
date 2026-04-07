@@ -1,0 +1,22 @@
+{
+  "scenario_id": "cafe_003",
+  "difficulty": "medium",
+  "task_name": "medium_cafe",
+  "scene": {
+    "location": "cafe",
+    "activity_signals": ["staring at menu board", "checking wallet", "shifting weight"],
+    "audio_cues": ["ordering sounds", "background chatter"],
+    "social_risk": 0.45,
+    "time_pressure": 0.6,
+    "n_people_nearby": 8,
+    "eye_contact_detected": false,
+    "user_hands_occupied": false
+  },
+  "ground_truth_intent": "needs_menu_information",
+  "correct_action": "wait",
+  "correct_assist_type": "none",
+  "optimal_step": 5,
+  "social_risk": 0.45,
+  "description": "User is deciding what to order; intent is not fully clear, wait for a stronger signal",
+  "intents": ["needs_menu_information", "deciding_order", "idle"]
+}

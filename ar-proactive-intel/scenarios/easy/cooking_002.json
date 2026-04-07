@@ -1,0 +1,22 @@
+{
+  "scenario_id": "cooking_002",
+  "difficulty": "easy",
+  "task_name": "easy_cooking",
+  "scene": {
+    "location": "kitchen",
+    "activity_signals": ["reading recipe on phone", "ingredients laid out", "oven light on"],
+    "audio_cues": ["oven beep", "silence"],
+    "social_risk": 0.05,
+    "time_pressure": 0.6,
+    "n_people_nearby": 0,
+    "eye_contact_detected": false,
+    "user_hands_occupied": false
+  },
+  "ground_truth_intent": "needs_next_recipe_step",
+  "correct_action": "assist",
+  "correct_assist_type": "informational",
+  "optimal_step": 2,
+  "social_risk": 0.05,
+  "description": "User is following a recipe, oven just beeped, needs next step",
+  "intents": ["needs_next_recipe_step", "idle", "checking_phone"]
+}

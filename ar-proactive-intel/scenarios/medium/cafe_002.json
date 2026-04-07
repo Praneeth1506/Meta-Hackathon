@@ -1,0 +1,22 @@
+{
+  "scenario_id": "cafe_002",
+  "difficulty": "medium",
+  "task_name": "medium_cafe",
+  "scene": {
+    "location": "cafe",
+    "activity_signals": ["looking at map on phone", "glancing at street outside", "asking barista something"],
+    "audio_cues": ["street noise", "coffee machine hissing"],
+    "social_risk": 0.4,
+    "time_pressure": 0.5,
+    "n_people_nearby": 6,
+    "eye_contact_detected": true,
+    "user_hands_occupied": false
+  },
+  "ground_truth_intent": "needs_navigation",
+  "correct_action": "assist",
+  "correct_assist_type": "navigation",
+  "optimal_step": 4,
+  "social_risk": 0.4,
+  "description": "User appears lost and is checking a map; navigation assistance is appropriate after confirming intent",
+  "intents": ["needs_navigation", "exploring_area", "idle"]
+}

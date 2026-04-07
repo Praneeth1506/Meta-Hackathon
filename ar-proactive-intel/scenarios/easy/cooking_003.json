@@ -1,0 +1,22 @@
+{
+  "scenario_id": "cooking_003",
+  "difficulty": "easy",
+  "task_name": "easy_cooking",
+  "scene": {
+    "location": "kitchen",
+    "activity_signals": ["chopping vegetables", "glancing at clock", "pot on stove"],
+    "audio_cues": ["chopping sounds", "sizzling"],
+    "social_risk": 0.05,
+    "time_pressure": 0.8,
+    "n_people_nearby": 0,
+    "eye_contact_detected": false,
+    "user_hands_occupied": true
+  },
+  "ground_truth_intent": "needs_time_reminder",
+  "correct_action": "assist",
+  "correct_assist_type": "productivity",
+  "optimal_step": 1,
+  "social_risk": 0.05,
+  "description": "User is multitasking while cooking, time pressure is high",
+  "intents": ["needs_time_reminder", "needs_cooking_timer", "idle"]
+}

@@ -1,0 +1,22 @@
+{
+  "scenario_id": "interview_001",
+  "difficulty": "hard",
+  "task_name": "hard_social",
+  "scene": {
+    "location": "meeting_room",
+    "activity_signals": ["sitting across from interviewer", "maintaining eye contact", "answering questions"],
+    "audio_cues": ["interviewer speaking", "quiet room"],
+    "social_risk": 0.92,
+    "time_pressure": 0.5,
+    "n_people_nearby": 2,
+    "eye_contact_detected": true,
+    "user_hands_occupied": false
+  },
+  "ground_truth_intent": "in_formal_interview",
+  "correct_action": "silent",
+  "correct_assist_type": "none",
+  "optimal_step": 1,
+  "social_risk": 0.92,
+  "description": "User is in a formal job interview — any AR interruption would be highly disruptive and embarrassing",
+  "intents": ["in_formal_interview", "needs_social_hint", "idle"]
+}

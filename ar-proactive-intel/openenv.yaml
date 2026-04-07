@@ -1,0 +1,51 @@
+name: ar-proactive-intel
+version: "1.0.0"
+description: >
+  Proactive Context Intelligence environment for AR glasses.
+  Agent learns to assist, wait, or stay silent based on
+  structured scene graphs with social risk modeling.
+author: your-hf-username
+tags:
+  - openenv
+  - ar
+  - proactive-ai
+  - social-intelligence
+tasks:
+  - name: easy_cooking
+    description: Clear intent cooking scenarios. Agent must assist correctly.
+    difficulty: easy
+    max_steps: 5
+  - name: medium_cafe
+    description: Ambiguous intent in cafe settings. Agent must infer or delay.
+    difficulty: medium
+    max_steps: 8
+  - name: hard_social
+    description: High social risk scenarios. Agent must recognize when silence is optimal.
+    difficulty: hard
+    max_steps: 10
+observation_space:
+  type: object
+  properties:
+    scene_context:
+      type: object
+    audio_cues:
+      type: array
+    social_risk:
+      type: number
+    context_clarity:
+      type: number
+    step_number:
+      type: integer
+action_space:
+  type: object
+  properties:
+    action_type:
+      type: string
+      enum: [assist, wait, silent]
+    assist_type:
+      type: string
+      enum: [navigation, productivity, social_hint, informational, none]
+    confidence:
+      type: number
+      minimum: 0.0
+      maximum: 1.0

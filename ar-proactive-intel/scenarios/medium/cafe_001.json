@@ -1,0 +1,22 @@
+{
+  "scenario_id": "cafe_001",
+  "difficulty": "medium",
+  "task_name": "medium_cafe",
+  "scene": {
+    "location": "cafe",
+    "activity_signals": ["looking at laptop screen", "typing slowly", "coffee cup nearby"],
+    "audio_cues": ["ambient cafe noise", "keyboard clicking"],
+    "social_risk": 0.35,
+    "time_pressure": 0.3,
+    "n_people_nearby": 4,
+    "eye_contact_detected": false,
+    "user_hands_occupied": true
+  },
+  "ground_truth_intent": "needs_productivity_help",
+  "correct_action": "wait",
+  "correct_assist_type": "none",
+  "optimal_step": 3,
+  "social_risk": 0.35,
+  "description": "User is working at a cafe, intent is ambiguous — wait for clearer signals before assisting",
+  "intents": ["needs_productivity_help", "browsing_casually", "idle"]
+}
