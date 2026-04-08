@@ -18,7 +18,7 @@ def grade_episode(
     - Reward trajectory quality: 20 points
     """
     if not actions:
-        return 0.0001
+        return 0.001
 
     score = 0.0
     final_action = actions[-1]
@@ -47,10 +47,9 @@ def grade_episode(
     else:
         score += 0.2
 
-    # Reward trajectory (20%)
     if rewards:
         positive_rewards = sum(1 for r in rewards if r > 0)
         trajectory_score = positive_rewards / len(rewards)
         score += 0.2 * trajectory_score
 
-    return round(min(0.9999, max(0.0001, score)), 4)
+    return round(min(0.999, max(0.001, score)), 3)

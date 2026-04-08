@@ -111,14 +111,14 @@ def run_task(client: OpenAI, task_name: str) -> float:
 
     reset_result = call_env(f"reset?task_name={task_name}")
     if "error" in reset_result:
-        log_end(success=False, steps=0, score=0.0, rewards=[])
-        return 0.0
+        log_end(success=False, steps=0, score=0.001, rewards=[])
+        return 0.001
 
     observation = reset_result.get("observation", {})
     rewards: List[float] = []
     steps_taken = 0
     done = False
-    score = 0.0
+    score = 0.001
     success = False
 
     try:
@@ -152,7 +152,7 @@ def run_task(client: OpenAI, task_name: str) -> float:
             )
 
         grade_result = call_env(f"grade?task_name={task_name}")
-        score = float(grade_result.get("score", 0.0))
+        score = float(grade_result.get("score", 0.001))
         success = score >= SUCCESS_THRESHOLD
 
     finally:
