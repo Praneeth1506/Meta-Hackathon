@@ -4,7 +4,7 @@ description: >
   Proactive Context Intelligence environment for AR glasses.
   Agent learns to assist, wait, or stay silent based on
   structured scene graphs with social risk modeling.
-author: your-hf-username
+author: Praneeth1506
 tags:
   - openenv
   - ar

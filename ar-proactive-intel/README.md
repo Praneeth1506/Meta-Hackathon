@@ -1,3 +1,20 @@
+---
+title: AR Proactive Context Intelligence
+emoji: 🥽
+colorFrom: indigo
+colorTo: purple
+sdk: docker
+app_port: 7860
+license: mit
+short_description: OpenEnv RL env for proactive AR glasses AI
+tags:
+  - openenv
+  - reinforcement-learning
+  - ar
+  - fastapi
+  - social-intelligence
+---
+
 # AR Proactive Context Intelligence — OpenEnv Environment
 
 [![OpenEnv](https://img.shields.io/badge/OpenEnv-compliant-blue)](https://huggingface.co/openenv)
